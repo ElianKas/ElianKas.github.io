@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'linked_nowblack';
+    src: url('./assets/jehoo_creative_-_linked_now_black-webfont.woff2') format('woff2'),
+         url('./assets/jehoo_creative_-_linked_now_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "linked_nowblack";
+    color: white;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh + 3000px);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+button{
+    background-color: #C4FF00;
+    border-radius: 2rem;
+    border: none;
+    padding: 10px 20px;
+    width: 300px;
+    color: black;
+    cursor: pointer;
+}
+
+#aside{
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    width: 10vw;
+    height: 60vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boxWrap{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.border{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+.box{
+    background: no-repeat center url("./assets/IMG_5785.png");
+    background-size: 100%;
+    aspect-ratio: 2/1.4;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.boxWrap:hover .box{
+    background-size: 102%;
+}
+
+#Navigation{
+    position: fixed;
+    align-self: end;
+    margin-right: 4vw;
+    margin-top: 4vw;
+    width: 70px;
+    z-index: 1;
+}
+
+#HomeBanner{
+    width: 100%;
+    top: -5%;
+    font-size: 12vw;
+    background: linear-gradient(to right,white, grey);
+    opacity: 0.4;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#projectPreview{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    height: 500px;
+    overflow-x: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#teaser{
+    font-size: 40px;
+    text-align: center;
+    padding: 0% 10%;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.projectInfo{
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.2px);
+    -webkit-backdrop-filter: blur(11.2px);
+    width: 400px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.centerImg{
+    object-fit: cover;
+    width: 350px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    margin-left: -70px;
+}
+
+.projectPic{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+#project1{
+    position: absolute;
+}
+
+#project2{
+    position: absolute;
+}
+
+#project3{
+    position: absolute;
+}
+
+@media (max-width: 600px) {
+    button{
+        padding: 10px 20px;
+        width: 200px;
+    }
+    
+    #aside{
+        margin: auto;
+        top: 80%;
+        left: 0%;
+        transform: translateY(0%);
+        width: 100%;
+        height: 20vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #HomeBanner {
+        top: 0;
+    }
+
+    #projectPreview{
+        width: 100%;
+        height: 100%;
+    }
+
+    .project{
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .centerImg{
+        object-fit: cover;
+        width: 80vw;
+        aspect-ratio: 1;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+
+    .projectInfo{
+        border-radius: 10px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.21);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.2px);
+        -webkit-backdrop-filter: blur(11.2px);
+        width: 80vw;
+        padding: 20px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+}

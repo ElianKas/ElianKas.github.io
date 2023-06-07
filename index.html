@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LL Produktdesigner</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="anime.min.js"></script>
+</head>
+<body>
+    <aside id="aside">
+        <div class="boxWrap" onclick="toProject1()">
+            <p>Project 1</p>
+            <div class="border">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="boxWrap" onclick="toProject2()">
+            <p>Project 2</p>
+            <div class="border">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="boxWrap" onclick="toProject3()">
+            <p>Project 3</p>
+            <div class="border">
+                <div class="box"></div>
+            </div>
+        </div>
+    </aside>
+    <img id="Navigation" onclick="toggleMenu()" src="./assets/Gruppe 2.svg" alt="Navigation">
+    <div id="HomeBanner">LUKAS LANGHEIN LUKAS LANGHEIN LUKAS LANGHEIN</div>
+    <video autoplay muted loop id="myVideo">
+        <source src="./assets/700_F_225414282_LzJexHN84U3rPzLTlijUigTtFRA2O8Ga_ST.mp4" type="video/mp4">
+    </video>
+    <div id="projectPreview">
+        <h2 id="teaser">Scrolle um die Projekte anzusehen</h2>
+        <div class="project" id="project1">
+            <div class="projectInfo">
+                <h2>FIREBOWL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Mehr erfahren</button>
+            </div>
+            <img class="centerImg" src="./assets/IMG_5785.png" alt="Kind mit Schleifen im Haar">
+        </div>
+        <div class="project" id="project2">
+            <div class="projectInfo">
+                <h2>Projekt 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Mehr erfahren</button>
+            </div>
+            <img class="centerImg" src="./assets/IMG_5785.png" alt="Kind mit Schleifen im Haar">
+        </div>
+        <div class="project" id="project3">
+            <div class="projectInfo">
+                <h2>Projekt 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Mehr erfahren</button>
+            </div>
+            <img class="centerImg" src="./assets/IMG_5785.png" alt="Kind mit Schleifen im Haar">
+        </div>
+    </div>
+    <script defer src="./index.js"></script>
+</body>
+</html>
